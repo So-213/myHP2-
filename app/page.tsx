@@ -28,6 +28,27 @@ function WindowManager() {
             </div>
           )}
 
+          {window.id === 'about me' && (
+            <div className="space-y-4">
+              <h1 className="text-xl font-bold">So</h1>
+              <p>年齢：23 (2001)</p>
+              <p>居住地歴：山梨 → 広島 → （KL）</p>
+              <h1>学歴：広島市立大学情報科学部卒</h1>
+              <h1>現在：KLに留学中</h1>
+              <h1>資格
+              <ul>
+                <li>第四級アマチュア無線技士（2014年）</li>
+                <li>実用英語技能検定2級（2018年）</li>
+                <li>普通自動車第一種運転免許（2023年）</li>
+              </ul></h1>
+              <img 
+                src="/me.jpg" 
+                alt="My Photo" 
+                className="w-40 h-auto full mx-auto" 
+              />
+            </div>
+          )}
+
           {window.id === 'projects' && (
             <div className="space-y-4">
               <h2 className="text-lg font-bold">My Projects</h2>
@@ -89,7 +110,7 @@ function WindowManager() {
 
             </div>
           )}
-          
+
         </Window>
       ))}
       <Taskbar windows={windows} onWindowClick={toggleWindow} />
