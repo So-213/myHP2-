@@ -4,6 +4,7 @@ import { Window } from '@/components/window'
 import { Taskbar } from '@/components/taskbar'
 import { WindowProvider, useWindows } from '@/components/window-provider'
 import { SocialIcons } from '@/components/social-icons'
+import Link from 'next/link';
 
 function WindowManager() {
   const { windows, toggleWindow, updatePosition } = useWindows()
@@ -29,23 +30,35 @@ function WindowManager() {
           )}
 
           {window.id === 'about me' && (
-            <div className="space-y-4">
-              <h1 className="text-xl font-bold">So</h1>
-              <p>年齢：23 (2001)</p>
-              <p>居住地歴：山梨 → 広島 → （KL）</p>
-              <h1>学歴：広島市立大学情報科学部卒</h1>
-              <h1>現在：KLに留学中</h1>
-              <h1>資格
-              <ul>
-                <li>第四級アマチュア無線技士（2014年）</li>
-                <li>実用英語技能検定2級（2018年）</li>
-                <li>普通自動車第一種運転免許（2023年）</li>
-              </ul></h1>
-              <img 
-                src="/me.jpg" 
-                alt="My Photo" 
-                className="w-40 h-auto full mx-auto" 
-              />
+            <div className="space-y-4 flex flex-col items-start">
+              <div className="flex justify-between w-full">
+                <h1 className="text-2xl font-bold">So</h1>
+                <img
+                  src="/me.jpg"
+                  alt="My Photo"
+                  className="w-32 h-auto rounded-lg shadow-md"
+                />
+              </div>
+              <div>
+                <h2 className="text-lg font-bold">年齢</h2>
+                <p>23 (2001)</p>
+              </div>
+              <div>
+                <h2 className="text-lg font-bold">居住地歴</h2>
+                <p>山梨 → 広島 → </p>
+              </div>
+              <div>
+                <h2 className="text-lg font-bold">学歴</h2>
+                <p>広島市立大学情報科学部卒</p>
+              </div>
+              <div>
+                <h2 className="text-lg font-bold">資格</h2>
+                <ul className="list-disc pl-5">
+                  <li>第4級アマチュア無線技士（2014年）</li>
+                  <li>実用英語技能検定2級（2018年）</li>
+                  <li>普通自動車第一種運転免許（2023年）</li>
+                </ul>
+              </div>
             </div>
           )}
 
@@ -53,18 +66,20 @@ function WindowManager() {
             <div className="space-y-4">
               <h2 className="text-lg font-bold">My Projects</h2>
               <div className="grid gap-2">
-                {['Project 1', 'Project 2', 'Project 3'].map((project) => (
-                  <div
-                    key={project}
-                    className="p-2"
-                    style={{
-                      backgroundColor: '#FFFFFF',
-                      boxShadow: 'inset -1px -1px 0 #808080, inset 1px 1px 0 #FFFFFF'
-                    }}
-                  >
-                    {project}
-                  </div>
-                ))}
+
+                <Link
+                  href="https://google.com"
+                  className="p-2 block"
+                  style={{
+                    backgroundColor: '#FFFFFF',
+                    boxShadow: 'inset -1px -1px 0 #808080, inset 1px 1px 0 #FFFFFF',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                  }}
+                >
+                  俳句/短歌のAIサイト（工事中）
+                </Link>
+
               </div>
             </div>
           )}
@@ -128,3 +143,5 @@ export default function Home() {
   )
 }
 
+
+// npm run dev
