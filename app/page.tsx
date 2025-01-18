@@ -68,7 +68,7 @@ function WindowManager() {
               <div className="grid gap-2">
 
                 <Link
-                  href="https://google.com"
+                  href="https://tanka-haiku.vercel.app/"
                   className="p-2 block"
                   style={{
                     backgroundColor: '#FFFFFF',
