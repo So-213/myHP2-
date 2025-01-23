@@ -77,7 +77,7 @@ function WindowManager() {
                     textDecoration: 'none',
                   }}
                 >
-                  俳句/短歌のAIサイト（工事中）
+                  俳句/短歌のAIサイト
                 </Link>
 
               </div>
