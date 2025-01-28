@@ -49,7 +49,7 @@ function WindowManager() {
               </div>
               <div>
                 <h2 className="text-lg font-bold">学歴</h2>
-                <p>広島市立大学情報科学部卒</p>
+                <p>広島市立大学 情報科学部卒</p>
               </div>
               <div>
                 <h2 className="text-lg font-bold">資格</h2>
