@@ -80,6 +80,19 @@ function WindowManager() {
                   俳句/短歌のAIサイト
                 </Link>
 
+                <Link
+                  href="https://google.com"
+                  className="p-2 block"
+                  style={{
+                    backgroundColor: '#FFFFFF',
+                    boxShadow: 'inset -1px -1px 0 #808080, inset 1px 1px 0 #FFFFFF',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Zaoralサイト（作成中）
+                </Link>
+
               </div>
             </div>
           )}
