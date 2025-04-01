@@ -32,6 +32,8 @@ function WindowManager() {
           {window.id === 'projects' && <ProjectsContent />}
           {window.id === 'contact' && <SnsContent />}
           {window.id === 'learning history' && <LearnigHistory />}
+          {window.id === 'project1' && <LearnigHistory />}
+          {window.id === 'project2' && <LearnigHistory />}
         </Window>
       ))}
       <Taskbar windows={windows} onWindowClick={toggleWindow} />

@@ -7,12 +7,15 @@ export default function ProjectsContent() {
     <div className="space-y-4">
       <h2 className="text-lg font-bold">My Projects</h2>
       <div className="grid gap-2">
+
         <Link href="https://tanka-haiku.vercel.app/" className="p-2 block" style={linkStyle}>
-          ①俳句/短歌のAIサイト
+        ①俳句/短歌のAIサイト
         </Link>
+
         <Link href="/creating" className="p-2 block" style={linkStyle}>
-          ②Zaoralサイト（作成中）
+        ②Zaoralサイト（作成中）
         </Link>
+
       </div>
     </div>
   );
@@ -26,3 +29,6 @@ const linkStyle = {
   cursor: 'pointer',
   textDecoration: 'none',
 };
+
+
+

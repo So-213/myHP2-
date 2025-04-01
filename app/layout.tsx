@@ -3,12 +3,8 @@ export const metadata = {
   description: 'This is my retro homepage.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
+export default function RootLayout({children}:{children:React.ReactNode})
+ {return (
     <html lang="ja">
       <head>
         <link rel="icon" href="/favicon.webp" />
@@ -17,7 +13,6 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
-}
+  )}
 
 import './globals.css'
