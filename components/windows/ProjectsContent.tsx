@@ -6,10 +6,10 @@ export default function ProjectsContent() {
       <h2 className="text-lg font-bold">My Projects</h2>
       <div className="grid gap-2">
         <Link href="https://tanka-haiku.vercel.app/" className="p-2 block" style={linkStyle}>
-          俳句/短歌のAIサイト
+          ①俳句/短歌のAIサイト
         </Link>
-        <Link href="https://google.com" className="p-2 block" style={linkStyle}>
-          Zaoralサイト（作成中）
+        <Link href="/creating" className="p-2 block" style={linkStyle}>
+          ②Zaoralサイト（作成中）
         </Link>
       </div>
     </div>

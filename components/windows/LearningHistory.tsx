@@ -16,21 +16,21 @@ export default function LearnigHistory() {
 
         <div className="flex-col w-full">
           <h1 className="text-xl font-bold">4-5ヶ月目</h1>
-          <p>API/Projects①</p>
+          <p>API/Projects①作成</p>
           <p>Vercel/V0/本HP作成</p>
           <p>cookie/セッション/認証認可</p>
         </div>
 
         <div className="flex-col w-full">
           <h1 className="text-xl font-bold">6ヶ月目</h1>
-          <p>Projects②/AWS一部/Next.js</p>
+          <p>Projects②作成開始/AWS一部/Next.js</p>
         </div>
 
         <div className="flex-col w-full">
           <h1 className="text-xl font-bold">7ヶ月目</h1>
           <p>Auth.js（JWTベース認証）/DB・Prisma・Supabase基礎</p>
         </div>
-        
+
 
 
       </div>
