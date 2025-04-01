@@ -23,12 +23,15 @@ export default function LearnigHistory() {
 
         <div className="flex-col w-full">
           <h1 className="text-xl font-bold">6ヶ月目</h1>
-          <p>Projects②作成開始/AWS一部/Next.js</p>
+          <p>Projects②作成開始</p>
+          <p>AWS一部</p>
+          <p>Next.js</p>
         </div>
 
         <div className="flex-col w-full">
           <h1 className="text-xl font-bold">7ヶ月目</h1>
-          <p>Auth.js（JWTベース認証）/DB・Prisma・Supabase基礎</p>
+          <p>Auth.js（JWTベース認証）</p>
+          <p>DB・Prisma・Supabase基礎</p>
         </div>
 
 

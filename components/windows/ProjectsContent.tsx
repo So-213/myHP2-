@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+
+
 export default function ProjectsContent() {
   return (
     <div className="space-y-4">
@@ -15,6 +17,8 @@ export default function ProjectsContent() {
     </div>
   );
 }
+
+
 
 const linkStyle = {
   backgroundColor: '#FFFFFF',
