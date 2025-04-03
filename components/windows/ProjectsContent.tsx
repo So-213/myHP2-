@@ -1,31 +1,23 @@
-import { useState } from "react";
-import HaikuWindow from "./HaikuWindow";
+import { useWindows } from '../window-provider'
 
 export default function ProjectsContent() {
-  const [showHaikuWindow, setShowHaikuWindow] = useState(false);
+  const { toggleWindow } = useWindows()
 
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-bold">My Projects</h2>
 
-
       <div 
         className="p-2 block" 
         style={linkStyle}
-        onClick={() => setShowHaikuWindow(true)}
+        onClick={() => toggleWindow('haiku')}
       >
         ①俳句/短歌のAIサイト
       </div>
       
-      {showHaikuWindow && (
-        <HaikuWindow onClose={() => setShowHaikuWindow(false)} />   // onCloseはアロー関数
-      )}
-      
       <div className="p-2 block" style={linkStyle}>
         ②Zaoralサイト（作成中）
       </div>
-
-
     </div>
   );
 }

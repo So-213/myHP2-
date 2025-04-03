@@ -9,6 +9,7 @@ import AboutMeContent from '@/components/windows/AboutMeContent'
 import ProjectsContent from '@/components/windows/ProjectsContent'
 import SnsContent from '@/components/windows/SnsContent'
 import LearnigHistory from '@/components/windows/LearningHistory'
+import HaikuContent from '@/components/windows/HaikuContent'
 
 
 
@@ -32,8 +33,7 @@ function WindowManager() {
           {window.id === 'projects' && <ProjectsContent />}
           {window.id === 'contact' && <SnsContent />}
           {window.id === 'learning history' && <LearnigHistory />}
-          {window.id === 'project1' && <LearnigHistory />}
-          {window.id === 'project2' && <LearnigHistory />}
+          {window.id === 'haiku' && <HaikuContent />}
         </Window>
       ))}
       <Taskbar windows={windows} onWindowClick={toggleWindow} />
