@@ -23,9 +23,8 @@ export function WindowProvider({ children }: { children: React.ReactNode }) {
     { id: 'about me', title: 'About me', isOpen: false, position: { x: 100, y: 170 } },
     { id: 'contact', title: '　SNS', isOpen: false, position: { x: 500, y: 100 } },
     { id: 'projects', title: 'Projects', isOpen: false, position: { x: 580, y: 380 } },
-    { id: 'learning history', title: 'Learning history', isOpen: false, position: { x: 900, y: 20 } },
-    // { id: 'project1', title: '俳句/短歌のAIサイト', isOpen: false, position: { x: 800, y: 200 } },
-    // { id: 'project2', title: 'Zaoralサイト', isOpen: false, position: { x: 850, y: 240 } },
+
+    { id: 'learning history', title: 'Learning history', isOpen: false, position: { x: 1100, y: 50 } },
   ])
 
   const toggleWindow = useCallback((id: string) => {

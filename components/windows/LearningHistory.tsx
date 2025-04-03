@@ -31,7 +31,7 @@ export default function LearnigHistory() {
         <div className="flex-col w-full">
           <h1 className="text-xl font-bold">7ヶ月目</h1>
           <p>Auth.js（JWTベース認証）</p>
-          <p>DB・Prisma・Supabase基礎</p>
+          <p>DB/Prisma/Supabase基礎</p>
         </div>
 
 
