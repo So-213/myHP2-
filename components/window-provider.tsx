@@ -7,6 +7,7 @@ type Window = {
   title: string
   isOpen: boolean
   position: { x: number; y: number }
+  showInTaskbar?: boolean
 }
 
 type WindowContextType = {
@@ -21,11 +22,11 @@ const WindowContext = createContext<WindowContextType | null>(null)
 
 export function WindowProvider({ children }: { children: React.ReactNode }) {
   const [windows, setWindows] = useState<Window[]>([
-    { id: 'about', title: 'Welcome', isOpen: true, position: { x: 20, y: 20 } },
-    { id: 'about me', title: 'About me', isOpen: false, position: { x: 100, y: 170 } },
-    { id: 'contact', title: '　SNS', isOpen: false, position: { x: 500, y: 100 } },
-    { id: 'projects', title: 'Projects', isOpen: false, position: { x: 580, y: 380 } },
-    { id: 'learning history', title: 'Learning history', isOpen: false, position: { x: 1100, y: 50 } },
+    { id: 'about', title: 'Welcome', isOpen: true, position: { x: 20, y: 20 }, showInTaskbar: true },
+    { id: 'about me', title: 'About me', isOpen: false, position: { x: 100, y: 170 }, showInTaskbar: true },
+    { id: 'contact', title: '　SNS', isOpen: false, position: { x: 500, y: 100 }, showInTaskbar: true },
+    { id: 'projects', title: 'Projects', isOpen: false, position: { x: 580, y: 380 }, showInTaskbar: true },
+    { id: 'learning history', title: 'Learning history', isOpen: false, position: { x: 1100, y: 50 }, showInTaskbar: true },
   ])
 
   const toggleWindow = useCallback((id: string) => {

@@ -8,6 +8,7 @@ interface TaskbarProps {
     id: string
     title: string
     isOpen: boolean
+    showInTaskbar?: boolean
   }>
   onWindowClick: (id: string) => void
 }
@@ -38,17 +39,19 @@ export function Taskbar({ windows, onWindowClick }: TaskbarProps) {
         </div>
       </button>
       <div className="w-px h-[70%] bg-gray-600 mx-1" />
-      {windows.map((window) => (
-        <Button
-          key={window.id}
-          onClick={() => onWindowClick(window.id)}
-          className={`h-[36px] min-w-[100px] flex items-center gap-2 ${
-            window.isOpen ? 'border-inset bg-[#808080]' : ''
-          }`}
-        >
-          <span className="truncate">{window.title}</span>
-        </Button>
-      ))}
+      {windows
+        .filter(window => window.showInTaskbar !== false)
+        .map((window) => (
+          <Button
+            key={window.id}
+            onClick={() => onWindowClick(window.id)}
+            className={`h-[36px] min-w-[100px] flex items-center gap-2 ${
+              window.isOpen ? 'border-inset bg-[#808080]' : ''
+            }`}
+          >
+            <span className="truncate">{window.title}</span>
+          </Button>
+        ))}
     </div>
   )
 }

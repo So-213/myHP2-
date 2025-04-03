@@ -9,7 +9,8 @@ export default function ProjectsContent() {
       id: 'haiku',
       title: '俳句/短歌のAIサイト',
       isOpen: true,
-      position: { x: 800, y: 20 }
+      position: { x: 800, y: 20 },
+      showInTaskbar: false
     }
     
     // ウィンドウが存在しない場合のみ追加
