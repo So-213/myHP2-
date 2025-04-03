@@ -1,7 +1,24 @@
 import { useWindows } from '../window-provider'
+import { useCallback } from 'react'
 
 export default function ProjectsContent() {
-  const { toggleWindow } = useWindows()
+  const { toggleWindow, addWindow, windows } = useWindows()
+
+  const handleHaikuClick = useCallback(() => {
+    const haikuWindow = {
+      id: 'haiku',
+      title: '俳句/短歌のAIサイト',
+      isOpen: true,
+      position: { x: 800, y: 20 }
+    }
+    
+    // ウィンドウが存在しない場合のみ追加
+    if (!windows.some(w => w.id === 'haiku')) {
+      addWindow(haikuWindow)
+    } else {
+      toggleWindow('haiku')
+    }
+  }, [addWindow, toggleWindow, windows])
 
   return (
     <div className="space-y-4">
@@ -10,7 +27,7 @@ export default function ProjectsContent() {
       <div 
         className="p-2 block" 
         style={linkStyle}
-        onClick={() => toggleWindow('haiku')}
+        onClick={handleHaikuClick}
       >
         ①俳句/短歌のAIサイト
       </div>

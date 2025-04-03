@@ -13,6 +13,8 @@ type WindowContextType = {
   windows: Window[]
   toggleWindow: (id: string) => void
   updatePosition: (id: string, position: { x: number; y: number }) => void
+  addWindow: (window: Window) => void
+  removeWindow: (id: string) => void
 }
 
 const WindowContext = createContext<WindowContextType | null>(null)
@@ -24,7 +26,6 @@ export function WindowProvider({ children }: { children: React.ReactNode }) {
     { id: 'contact', title: '　SNS', isOpen: false, position: { x: 500, y: 100 } },
     { id: 'projects', title: 'Projects', isOpen: false, position: { x: 580, y: 380 } },
     { id: 'learning history', title: 'Learning history', isOpen: false, position: { x: 1100, y: 50 } },
-    { id: 'haiku', title: '俳句/短歌のAIサイト', isOpen: false, position: { x: 800, y: 20 } },
   ])
 
   const toggleWindow = useCallback((id: string) => {
@@ -39,8 +40,19 @@ export function WindowProvider({ children }: { children: React.ReactNode }) {
     )
   }, [])
 
+  const addWindow = useCallback((window: Window) => {
+    setWindows(prev => {
+      if (prev.some(w => w.id === window.id)) return prev;
+      return [...prev, window];
+    });
+  }, []);
+
+  const removeWindow = useCallback((id: string) => {
+    setWindows(prev => prev.filter(w => w.id !== id));
+  }, []);
+
   return (
-    <WindowContext.Provider value={{ windows, toggleWindow, updatePosition }}>
+    <WindowContext.Provider value={{ windows, toggleWindow, updatePosition, addWindow, removeWindow }}>
       {children}
     </WindowContext.Provider>
   )
