@@ -16,8 +16,8 @@ export default function AboutMeContent() {
           <p>23 (2001)</p>
         </div>
         <div>
-          <h2 className="text-lg font-bold">居住地歴</h2>
-          <p>山梨 → 広島 → </p>
+          <h2 className="text-lg font-bold">現在</h2>
+          <p>KL語学留学待ち</p>
         </div>
         <div>
           <h2 className="text-lg font-bold">学歴</h2>
@@ -32,8 +32,8 @@ export default function AboutMeContent() {
           </ul>
         </div>
         <div>
-          <h2 className="text-lg font-bold">人生観</h2>
-          <p>どうせ死ぬのだから後悔しないように生きる</p>
+          <h2 className="text-lg font-bold">性格</h2>
+          <p>ヒッチハイクとか野宿とか面白いことが好きです。</p>
         </div>
       </div>
     );

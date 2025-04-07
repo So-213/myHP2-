@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'SoのHP',
+  title: 'HP',
   description: 'This is my retro homepage.',
 }
 
