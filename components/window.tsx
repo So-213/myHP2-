@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { Minus, Square, X } from 'lucide-react'
 
 
@@ -18,31 +18,62 @@ interface WindowProps {
 export function Window({ id, title, children, position, onPositionChange, onClose, icon }: WindowProps) {
   const [isDragging, setIsDragging] = useState(false)
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
 
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+  useEffect(() => {
+    const updateSize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      })
+    }
+
+    updateSize()
+    window.addEventListener('resize', updateSize)
+    return () => window.removeEventListener('resize', updateSize)
+  }, [])
+
+  const handleStart = useCallback((clientX: number, clientY: number) => {
     setIsDragging(true)
     setDragStart({
-      x: e.clientX - position.x,
-      y: e.clientY - position.y,
+      x: clientX - position.x,
+      y: clientY - position.y,
     })
   }, [position])
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+  const handleMove = useCallback((clientX: number, clientY: number) => {
     if (isDragging) {
-      onPositionChange({
-        x: e.clientX - dragStart.x,
-        y: e.clientY - dragStart.y,
-      })
+      const newX = Math.max(0, Math.min(clientX - dragStart.x, windowSize.width - 250))
+      const newY = Math.max(0, Math.min(clientY - dragStart.y, windowSize.height - 100))
+      onPositionChange({ x: newX, y: newY })
     }
-  }, [isDragging, dragStart, onPositionChange])
+  }, [isDragging, dragStart, onPositionChange, windowSize])
 
-  const handleMouseUp = useCallback(() => {
+  const handleEnd = useCallback(() => {
     setIsDragging(false)
   }, [])
 
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    handleStart(e.clientX, e.clientY)
+  }, [handleStart])
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    handleMove(e.clientX, e.clientY)
+  }, [handleMove])
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    const touch = e.touches[0]
+    handleStart(touch.clientX, touch.clientY)
+  }, [handleStart])
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    const touch = e.touches[0]
+    handleMove(touch.clientX, touch.clientY)
+  }, [handleMove])
+
   return (
     <div
-      className="fixed min-w-[250px] rounded-sm"
+      className="fixed min-w-[250px] max-w-[95vw] rounded-sm"
       style={{
         left: position.x,
         top: position.y,
@@ -56,15 +87,18 @@ export function Window({ id, title, children, position, onPositionChange, onClos
         `
       }}
       onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseUp}
+      onMouseUp={handleEnd}
+      onMouseLeave={handleEnd}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleEnd}
     >
       <div
-        className="flex items-center h-[20px] cursor-move px-1"
+        className="flex items-center h-[20px] cursor-move px-1 touch-none"
         style={{
           background: 'linear-gradient(90deg, #000080 0%, #1084d0 100%)',
         }}
         onMouseDown={handleMouseDown}
+        onTouchStart={handleTouchStart}
       >
         {icon && (
           <img src={icon} alt="" className="w-4 h-4 mr-1" />
@@ -82,7 +116,7 @@ export function Window({ id, title, children, position, onPositionChange, onClos
           </button>
         </div>
       </div>
-      <div className="p-4">{children}</div>
+      <div className="p-4 overflow-auto max-h-[80vh]">{children}</div>
     </div>
   )
 }
