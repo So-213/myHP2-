@@ -19,19 +19,29 @@ export function Window({ id, title, children, position, onPositionChange, onClos
   const [isDragging, setIsDragging] = useState(false)
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const updateSize = () => {
+      const width = window.innerWidth
       setWindowSize({
-        width: window.innerWidth,
+        width,
         height: window.innerHeight,
       })
+      setIsMobile(width <= 768) // 768px以下をモバイルとみなす
     }
 
     updateSize()
     window.addEventListener('resize', updateSize)
     return () => window.removeEventListener('resize', updateSize)
   }, [])
+
+  // モバイルの場合、初期x座標を20に設定
+  useEffect(() => {
+    if (isMobile && position.x === 0) {
+      onPositionChange({ ...position, x: 20 , y: 20 })
+    }
+  }, [isMobile, position, onPositionChange])
 
   const handleStart = useCallback((clientX: number, clientY: number) => {
     setIsDragging(true)
