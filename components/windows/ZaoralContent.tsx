@@ -1,8 +1,8 @@
 export default function ZaoralContent() {
   return (
     <div className="p-4 space-y-4">
-      <h2 className="text-lg font-bold">俳句/短歌のAIサイト</h2>
-      <p>俳句や短歌に対してAIが感想を返答するWebアプリケーション</p>
+      <h2 className="text-lg font-bold">Zaoralサイト</h2>
+      <p>作成中</p>
       <div className="space-y-2">
 
         <h3 className="font-bold">制作期間</h3>
@@ -14,7 +14,9 @@ export default function ZaoralContent() {
         <ul className="list-disc list-inside">
           <li>Vercelホスティング</li>
           <li>Next.js</li>
-          <li>OpenAI API</li>
+          <li>Auth.js</li>
+          <li>Stripe</li>
+          <li>EC2など</li>
         </ul>
       </div>
       <a 

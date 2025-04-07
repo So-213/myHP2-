@@ -33,10 +33,10 @@ export default function ProjectsContent() {
     }
 
     // ウィンドウが存在しない場合のみ追加
-    if (!windows.some(w => w.id === 'zaoralWindow')) {
+    if (!windows.some(w => w.id === 'zaoral')) {
       addWindow(zaoralWindow)
     } else {
-      toggleWindow('zaoralWindow')
+      toggleWindow('zaoral')
     }
   }, [addWindow, toggleWindow, windows])
 
