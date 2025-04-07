@@ -12,7 +12,7 @@ export default function ProjectsContent() {
       position: { x: 800, y: 20 },
       showInTaskbar: false
     }
-    
+
     // ウィンドウが存在しない場合のみ追加
     if (!windows.some(w => w.id === 'haiku')) {
       addWindow(haikuWindow)
@@ -20,6 +20,34 @@ export default function ProjectsContent() {
       toggleWindow('haiku')
     }
   }, [addWindow, toggleWindow, windows])
+
+
+
+  const handleZaoralClick = useCallback(() => {
+    const zaoralWindow = {
+      id: 'zaoral',
+      title: 'zaoralサイト',
+      isOpen: true,
+      position: { x: 800, y: 50 },
+      showInTaskbar: false
+    }
+
+    // ウィンドウが存在しない場合のみ追加
+    if (!windows.some(w => w.id === 'zaoralWindow')) {
+      addWindow(zaoralWindow)
+    } else {
+      toggleWindow('zaoralWindow')
+    }
+  }, [addWindow, toggleWindow, windows])
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="space-y-4">
@@ -32,20 +60,21 @@ export default function ProjectsContent() {
       >
         ①俳句/短歌のAIサイト
       </div>
-      
-      <div className="p-2 block" style={linkStyle}>
+
+      <div 
+        className="p-2 block" 
+        style={linkStyle}
+        onClick={handleZaoralClick}
+      >
         ②Zaoralサイト（作成中）
       </div>
+      
     </div>
   );
 }
 
-{/* <Link href="https://tanka-haiku.vercel.app/" className="p-2 block" style={linkStyle}>
-①俳句/短歌のAIサイト
-</Link>
-<Link href="/creating" className="p-2 block" style={linkStyle}>
-②Zaoralサイト（作成中）
-</Link> */}
+
+
 
 const linkStyle = {
   backgroundColor: '#FFFFFF',

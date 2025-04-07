@@ -2,6 +2,8 @@
 
 import { createContext, useContext, useState, useCallback } from 'react'
 
+
+
 type Window = {
   id: string
   title: string
@@ -17,6 +19,8 @@ type WindowContextType = {
   addWindow: (window: Window) => void
   removeWindow: (id: string) => void
 }
+
+
 
 const WindowContext = createContext<WindowContextType | null>(null)
 

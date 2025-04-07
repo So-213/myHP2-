@@ -1,4 +1,4 @@
-export default function HaikuContent() {
+export default function ZaoralContent() {
   return (
     <div className="p-4 space-y-4">
       <h2 className="text-lg font-bold">俳句/短歌のAIサイト</h2>

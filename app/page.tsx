@@ -10,6 +10,7 @@ import ProjectsContent from '@/components/windows/ProjectsContent'
 import SnsContent from '@/components/windows/SnsContent'
 import LearnigHistory from '@/components/windows/LearningHistory'
 import HaikuContent from '@/components/windows/HaikuContent'
+import ZaoralContent from '@/components/windows/ZaoralContent'
 
 
 
@@ -34,6 +35,7 @@ function WindowManager() {
           {window.id === 'contact' && <SnsContent />}
           {window.id === 'learning history' && <LearnigHistory />}
           {window.id === 'haiku' && <HaikuContent />}
+          {window.id === 'zaoral' && <ZaoralContent />}
         </Window>
       ))}
       <Taskbar windows={windows} onWindowClick={toggleWindow} />
@@ -45,7 +47,7 @@ export default function Home() {
   return (
     <WindowProvider>
       <main className="min-h-screen bg-[#008080] p-4">
-        <WindowManager />
+        <WindowManager/>
       </main>
     </WindowProvider>
   )

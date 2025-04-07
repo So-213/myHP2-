@@ -3,6 +3,8 @@
 import { useState, useCallback } from 'react'
 import { Minus, Square, X } from 'lucide-react'
 
+
+
 interface WindowProps {
   id: string
   title: string
