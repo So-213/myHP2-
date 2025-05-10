@@ -17,7 +17,7 @@ export default function AboutMeContent() {
         </div>
         <div>
           <h2 className="text-lg font-bold">現在</h2>
-          <p>KL語学留学待ち</p>
+          <p>クアラルンプールにいます</p>
         </div>
         <div>
           <h2 className="text-lg font-bold">学歴</h2>
@@ -32,7 +32,7 @@ export default function AboutMeContent() {
           </ul>
         </div>
         <div>
-          <h2 className="text-lg font-bold">性格</h2>
+          <h2 className="text-lg font-bold">その他</h2>
           <p>ヒッチハイクとか野宿とか面白いことが好きです。</p>
         </div>
       </div>

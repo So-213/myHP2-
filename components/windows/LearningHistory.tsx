@@ -33,10 +33,12 @@ export default function LearnigHistory() {
           <h1 className="text-xl font-bold">7ヶ月目</h1>
           <p>Auth.js（JWTベース認証）</p>
           <p>DB設計 / Postgres / Prisma / Supabase</p>
-          <p>Stripe</p>
         </div>
 
-
+        <div className="flex-col w-full">
+          <h1 className="text-xl font-bold">8ヶ月目（KL渡航）</h1>
+          <p>Stripe</p>
+        </div>
 
       </div>
     );
