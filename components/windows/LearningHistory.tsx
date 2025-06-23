@@ -40,6 +40,16 @@ export default function LearnigHistory() {
           <p>Stripe</p>
         </div>
 
+        <div className="flex-col w-full">
+          <h1 className="text-xl font-bold">9ヶ月目</h1>
+          <p>blank</p>
+        </div>
+
+        <div className="flex-col w-full">
+          <h1 className="text-xl font-bold">10ヶ月目</h1>
+          <p>Stripe</p>
+        </div>
+
       </div>
     );
   }
