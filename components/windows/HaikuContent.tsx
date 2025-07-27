@@ -5,17 +5,12 @@ export default function HaikuContent() {
       <p>俳句や短歌に対してAIが感想を返答するWebアプリケーション</p>
       <div className="space-y-2">
 
-        <h3 className="font-bold">制作期間</h3>
-        <p>不明</p>
 
-        <p></p>
+        <h3 className="font-bold">コメント</h3>
+        <p>Webの勉強を初めて3ヶ月目の時に右も左もわからないままv0を使って作成したものです。</p>        
+        <p>不明詳細はgithubの"tanka_haiku"を参照。</p>
 
-        <h3 className="font-bold">使用技術</h3>
-        <ul className="list-disc list-inside">
-          <li>Vercelホスティング</li>
-          <li>Next.js</li>
-          <li>OpenAI API</li>
-        </ul>
+
       </div>
       <a 
         href="https://tanka-haiku.vercel.app/" 
