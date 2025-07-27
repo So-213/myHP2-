@@ -36,13 +36,13 @@ export default function LearnigHistory() {
         </div>
 
         <div className="flex-col w-full">
-          <h1 className="text-xl font-bold">8ヶ月目（KL渡航）</h1>
-          <p>Stripe</p>
+          <h1 className="text-xl font-bold">8-9ヶ月目（KL渡航）</h1>
+          <p>休止期間</p>
         </div>
 
         <div className="flex-col w-full">
           <h1 className="text-xl font-bold">9ヶ月目</h1>
-          <p>blank</p>
+          <p>休止期間</p>
         </div>
 
         <div className="flex-col w-full">
