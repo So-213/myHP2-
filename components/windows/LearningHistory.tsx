@@ -49,7 +49,7 @@ export default function LearnigHistory() {
 
       <h1 className="text-l font-bold">コメント</h1>
       <p>
-        基本的に新しい技術を学んで実装する際は、UdemyやYoutubeで概要やロジックを理解してからコードはCursorに書いてもらうという流れでした。
+        基本的に新しい技術を学んで実装する際は、UdemyやYoutubeで概要やロジックを理解してからコードはCursorに書いてもらうという流れでやっていたのでコードは書けないです。
       </p>
 
 
