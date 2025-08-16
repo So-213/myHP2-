@@ -12,7 +12,7 @@ export default function HaikuKaiContent() {
 
       </div>
       <a 
-        href="https://haiku-tanka2.vercel.app/" 
+        href="https://haiku_tanka2.vercel.app/" 
         target="_blank" 
         rel="noopener noreferrer"
         className="inline-block px-4 py-2"
