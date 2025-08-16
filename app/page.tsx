@@ -10,6 +10,7 @@ import ProjectsContent from '@/components/windows/ProjectsContent'
 import SnsContent from '@/components/windows/SnsContent'
 import LearnigHistory from '@/components/windows/LearningHistory'
 import HaikuContent from '@/components/windows/HaikuContent'
+import HaikuKaiContent from '@/components/windows/HaikuKaiContent'
 import ZaoralContent from '@/components/windows/ZaoralContent'
 
 
@@ -35,6 +36,7 @@ function WindowManager() {
           {window.id === 'contact' && <SnsContent />}
           {window.id === 'learning history' && <LearnigHistory />}
           {window.id === 'haiku' && <HaikuContent />}
+          {window.id === 'haikuKai' && <HaikuKaiContent />}
           {window.id === 'zaoral' && <ZaoralContent />}
         </Window>
       ))}

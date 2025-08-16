@@ -24,7 +24,6 @@ export default function LearnigHistory() {
 
         <div className="flex-col w-full">
           <h2 className="text-base font-bold">6ヶ月目</h2>
-          <p>Projects②作成開始</p>
           <p>Cognito / Route53</p>
           <p>Next.js</p>
         </div>
@@ -49,7 +48,8 @@ export default function LearnigHistory() {
 
       <h1 className="text-l font-bold">コメント</h1>
       <p>
-        基本的に新しい技術を学んで実装する際は、UdemyやYoutubeで概要やロジックを理解してからコードはCursorに書いてもらうという流れでやっていたのでコードは書けないです。
+        基本的にUdemyやYoutubeで概要やロジックを理解してから、コードはCursorに書いてもらうという流れで勉強していたので自力でコードは書けないです。
+        {/* 広く浅く */}
       </p>
 
 

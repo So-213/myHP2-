@@ -1,15 +1,21 @@
 import { useWindows } from '../window-provider'
 import { useCallback } from 'react'
 
+
+
 export default function ProjectsContent() {
   const { toggleWindow, addWindow, windows } = useWindows()
+
+
+
+
 
   const handleHaikuClick = useCallback(() => {
     const haikuWindow = {
       id: 'haiku',
       title: '俳句/短歌のAIサイト',
       isOpen: true,
-      position: { x: 800, y: 20 },
+      position: { x: 100, y: 20 },
       showInTaskbar: false
     }
 
@@ -23,12 +29,31 @@ export default function ProjectsContent() {
 
 
 
+  const handleHaikuKaiClick = useCallback(() => {
+    const haikuKaiWindow = {
+      id: 'haikuKai',
+      title: '俳句/短歌のAIサイト（改）',
+      isOpen: true,
+      position: { x: 500, y: 20 },
+      showInTaskbar: false
+    }
+
+    // ウィンドウが存在しない場合のみ追加
+    if (!windows.some(w => w.id === 'haikuKai')) {
+      addWindow(haikuKaiWindow)
+    } else {
+      toggleWindow('haikuKai')
+    }
+  }, [addWindow, toggleWindow, windows])
+
+
+
   const handleZaoralClick = useCallback(() => {
     const zaoralWindow = {
       id: 'zaoral',
       title: 'zaoralサイト',
       isOpen: true,
-      position: { x: 800, y: 50 },
+      position: { x: 900, y: 20 },
       showInTaskbar: false
     }
 
@@ -39,12 +64,6 @@ export default function ProjectsContent() {
       toggleWindow('zaoral')
     }
   }, [addWindow, toggleWindow, windows])
-
-
-
-
-
-
 
 
 
@@ -64,9 +83,17 @@ export default function ProjectsContent() {
       <div 
         className="p-2 block" 
         style={linkStyle}
+        onClick={handleHaikuKaiClick}
+      >
+        ②俳句/短歌のAIサイト（改）
+      </div>
+
+      <div 
+        className="p-2 block" 
+        style={linkStyle}
         onClick={handleZaoralClick}
       >
-        ②Zaoralサイト（作成中）
+        ③Zaoralサイト（作成中）
       </div>
       
     </div>
