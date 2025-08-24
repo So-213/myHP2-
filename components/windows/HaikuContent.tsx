@@ -2,13 +2,13 @@ export default function HaikuContent() {
   return (
     <div className="p-4 space-y-4 w-80">
       <h2 className="text-lg font-bold">俳句/短歌のAIサイト</h2>
-      <p>俳句や短歌に対してAIが感想を返答するWebアプリケーション</p>
+      <p>俳句や短歌に対してAIが感想を返答してくれるWebアプリケーションです。</p>
       <div className="space-y-2">
 
 
         <h3 className="font-bold">コメント</h3>
         <p>Webの勉強を初めて3ヶ月目の時に右も左もわからないままv0を使って作成したものです。</p>        
-        <p>詳細はgithubの"tanka_haiku"を参照。</p>
+        <p>詳細はGitHubの"tanka_haiku"を参照。</p>
 
 
       </div>

@@ -32,7 +32,7 @@ export default function ProjectsContent() {
   const handleHaikuKaiClick = useCallback(() => {
     const haikuKaiWindow = {
       id: 'haikuKai',
-      title: '俳句/短歌のAIサイト（改）',
+      title: '俳句/短歌のAIサイト(改)',
       isOpen: true,
       position: { x: 500, y: 20 },
       showInTaskbar: false
@@ -85,7 +85,7 @@ export default function ProjectsContent() {
         style={linkStyle}
         onClick={handleHaikuKaiClick}
       >
-        ②俳句/短歌のAIサイト（改）
+        ②俳句/短歌のAIサイト(改)
       </div>
 
       <div 

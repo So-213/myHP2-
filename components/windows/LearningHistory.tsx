@@ -46,11 +46,11 @@ export default function LearnigHistory() {
       </div>
 
 
-      <h1 className="text-l font-bold">コメント</h1>
+      {/* <h1 className="text-l font-bold">コメント</h1>
       <p>
         基本的にUdemyやYoutubeで概要やロジックを理解してから、コードはCursorに書いてもらうという流れで勉強していたので自力でコードは書けないです。
-        {/* 広く浅く */}
-      </p>
+        広く浅く
+      </p> */}
 
 
 
