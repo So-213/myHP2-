@@ -8,7 +8,7 @@ export default function AboutMeContent() {
           <img
             src="/me.jpg"
             alt="My Photo"
-            className="w-32 h-auto rounded-lg shadow-md"
+            className="w-40 h-auto rounded-lg shadow-md"
           />
         </div>
         <div>

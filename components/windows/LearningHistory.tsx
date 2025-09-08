@@ -36,12 +36,16 @@ export default function LearnigHistory() {
 
         <div className="flex-col w-full">
           <h2 className="text-base font-bold">8-9ヶ月目（KL渡航期）</h2>
-          <p>休止期間2.5ヶ月</p>
+          <p>休止期間2ヶ月</p>
         </div>
 
         <div className="flex-col w-full">
           <h2 className="text-base font-bold">10ヶ月目</h2>
           <p>Stripe</p>
+        </div>
+        <div className="flex-col w-full">
+          <h2 className="text-base font-bold">11ヶ月目</h2>
+          <p>Now</p>
         </div>
       </div>
 
@@ -50,6 +54,21 @@ export default function LearnigHistory() {
       <p>
         基本的にUdemyやYoutubeで概要やロジックを理解してから、コードはCursorに書いてもらうという流れで勉強していたので自力でコードは書けないです。
         広く浅く
+      </p> */}
+
+      {/* <h1 className="text-l font-bold">学習スタイル</h1>
+      <p>
+
+      </p> */}
+
+      {/* <h1 className="text-l font-bold">長所</h1>
+      <p>
+     
+      </p> */}
+
+      {/* <h1 className="text-l font-bold">短所</h1>
+      <p>
+
       </p> */}
 
 

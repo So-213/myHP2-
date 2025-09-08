@@ -4,12 +4,8 @@ export default function HaikuKaiContent() {
       <h2 className="text-lg font-bold">俳句/短歌のAIサイト(改)</h2>
       <p>俳句/短歌のAIサイトの改訂版です。Next.js / TypeScript仕様にした上、認証機能を追加してあります。Stripe実装は完遂できませんでした。</p>   
       <div className="space-y-2">
-
-
         <h3 className="font-bold">コメント</h3>     
         <p>詳細はGitHubの"haiku-tanka2"を参照。</p>
-
-
       </div>
       <a 
         href="https://haiku_tanka2.vercel.app/" 
