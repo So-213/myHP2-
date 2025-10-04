@@ -6,9 +6,10 @@ export default function HaikuKaiContent() {
       <div className="space-y-2">
         <h3 className="font-bold">コメント</h3>     
         <p>詳細はGitHubの"haiku-tanka2"を参照。</p>
+        <p className="text-red-600 font-medium">※ サブスク加入ボタンは押さないでください。</p>
       </div>
       <a 
-        href="https://haiku_tanka2.vercel.app/" 
+        href="https://haiku-tanka2.vercel.app/" 
         target="_blank" 
         rel="noopener noreferrer"
         className="inline-block px-4 py-2"
