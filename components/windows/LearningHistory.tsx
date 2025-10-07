@@ -40,11 +40,15 @@ export default function LearnigHistory() {
         </div>
 
         <div className="flex-col w-full">
-          <h2 className="text-base font-bold">10ヶ月目</h2>
+          <h2 className="text-base font-bold">10-11ヶ月目</h2>
           <p>Stripe</p>
         </div>
         <div className="flex-col w-full">
-          <h2 className="text-base font-bold">11ヶ月目</h2>
+          <h2 className="text-base font-bold">12ヶ月目</h2>
+          <p>Projects③作成</p>
+        </div>
+        <div className="flex-col w-full">
+          <h2 className="text-base font-bold">13ヶ月目</h2>
           <p>Now</p>
         </div>
       </div>
