@@ -33,7 +33,7 @@ export default function AboutMeContent() {
         </div>
         <div>
           <h2 className="text-lg font-bold">その他</h2>
-          <p>ヒッチハイクとか野宿とか面白いことが好きです。</p>
+          <p>ヒッチハイクとか野宿とか面白いことが好きです</p>
         </div>
       </div>
     );
