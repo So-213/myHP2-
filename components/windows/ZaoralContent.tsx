@@ -3,10 +3,10 @@ export default function ZaoralContent() {
     <div className="p-4 space-y-4">
       <h2 className="text-lg font-bold">Zaoralサイト</h2>
       <p>LINEなどで女性に返信を促すためのアプリです.</p>
-      {/* <div className="space-y-2">
+      <div className="space-y-2">
         <h3 className="font-bold">コメント</h3>     
-        <p>詳細はGitHubの"haiku-tanka2"を参照.</p>
-      </div> */}
+        <p>詳細はGitHubの"Zaoral"/"Zaoral_backend3"を参照.</p>
+      </div>
       <div className="space-y-2">
         <h3 className="font-bold">制作理由</h3>     
         <p>ホストの友達が姫作りに苦戦していたのを見て, LINEで既読スルーを減らせるアプリを作れないかと考えていたときに思いつきました.</p>

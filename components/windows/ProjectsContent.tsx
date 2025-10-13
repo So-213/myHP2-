@@ -93,7 +93,7 @@ export default function ProjectsContent() {
         style={linkStyle}
         onClick={handleZaoralClick}
       >
-        ③Zaoralサイト（作成中）
+        ③Zaoralサイト
       </div>
       
     </div>
