@@ -10,7 +10,7 @@ export default function LearnigHistory() {
       <div className="flex-col w-full">
         <div className="flex-col w-full">
           <h2 className="text-base font-bold">1-3ヶ月目</h2>
-          <p>GitHub / Web技術概略</p>
+          <p>GitHub基礎 / Web技術概略</p>
           <p>HTML / CSS / JS</p>
           <p>JS / Node.js / React</p>
         </div>
@@ -25,7 +25,7 @@ export default function LearnigHistory() {
         <div className="flex-col w-full">
           <h2 className="text-base font-bold">6ヶ月目</h2>
           <p>Cognito / Route53</p>
-          <p>Next.js</p>
+          <p>Next.js基礎</p>
         </div>
 
         <div className="flex-col w-full">
@@ -44,12 +44,9 @@ export default function LearnigHistory() {
           <p>Stripe</p>
         </div>
         <div className="flex-col w-full">
-          <h2 className="text-base font-bold">12ヶ月目</h2>
-          <p>Projects③作成</p>
-        </div>
-        <div className="flex-col w-full">
-          <h2 className="text-base font-bold">13ヶ月目</h2>
-          <p>Now</p>
+          <h2 className="text-base font-bold">12-13ヶ月目</h2>
+          <p>Projects③</p>
+          <p>Docker基礎</p>
         </div>
       </div>
 

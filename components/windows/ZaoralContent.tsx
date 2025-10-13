@@ -5,7 +5,7 @@ export default function ZaoralContent() {
       <p>LINEなどで女性に返信を促すためのアプリです.</p>
       <div className="space-y-2">
         <h3 className="font-bold">コメント</h3>     
-        <p>詳細はGitHubの"Zaoral"/"Zaoral_backend3"を参照.</p>
+        <p>詳細はGitHubの"Zaoral"や"Zaoral_backend3"を参照.</p>
       </div>
       <div className="space-y-2">
         <h3 className="font-bold">制作理由</h3>     

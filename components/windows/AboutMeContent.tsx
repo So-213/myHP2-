@@ -13,7 +13,7 @@ export default function AboutMeContent() {
         </div>
         <div>
           <h2 className="text-lg font-bold">年齢</h2>
-          <p>23 (2001)</p>
+          <p>24 (2001)</p>
         </div>
         <div>
           <h2 className="text-lg font-bold">現在</h2>
