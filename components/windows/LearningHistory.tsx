@@ -31,7 +31,7 @@ export default function LearningHistory() {
       status: "completed"
     },
     {
-      period: "12-13ヶ月目",
+      period: "12-14ヶ月目",
       topics: ["Projects③", "Docker基礎"],
       status: "completed"
     }
@@ -85,30 +85,6 @@ export default function LearningHistory() {
           基本的にUdemyやYoutubeで概要やロジックを理解してから、コードはCursorに書いてもらうという流れで勉強しています。
         </p>
       </div>
-
-
-      {/* <h1 className="text-l font-bold">コメント</h1>
-      <p>
-        基本的にUdemyやYoutubeで概要やロジックを理解してから、コードはCursorに書いてもらうという流れで勉強していたので自力でコードは書けないです。
-        広く浅く
-      </p> */}
-
-      {/* <h1 className="text-l font-bold">学習スタイル</h1>
-      <p>
-
-      </p> */}
-
-      {/* <h1 className="text-l font-bold">長所</h1>
-      <p>
-     
-      </p> */}
-
-      {/* <h1 className="text-l font-bold">短所</h1>
-      <p>
-
-      </p> */}
-
-
 
     </div>
   );
