@@ -21,8 +21,8 @@ export default function LearningHistory() {
       status: "completed"
     },
     {
-      period: "8-9ヶ月目（KL渡航期）",
-      topics: ["休止期間2ヶ月"],
+      period: "8-9ヶ月目",
+      topics: ["KL渡航","休止期間2ヶ月"],
       status: "paused"
     },
     {
@@ -78,14 +78,6 @@ export default function LearningHistory() {
           </div>
         ))}
       </div>
-
-      <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-        <h3 className="text-sm font-bold text-blue-800 mb-2">学習スタイル</h3>
-        <p className="text-sm text-blue-700">
-          基本的にUdemyやYoutubeで概要やロジックを理解してから、コードはCursorに書いてもらうという流れで勉強しています。
-        </p>
-      </div>
-
     </div>
   );
 }

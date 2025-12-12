@@ -2,9 +2,10 @@ export default function HaikuKaiContent() {
   return (
     <div className="p-4 space-y-4 w-80">
       <h2 className="text-lg font-bold">俳句/短歌のAIサイト(改)</h2>
-      <p>俳句/短歌のAIサイトの改訂版です. Next.js / TypeScript仕様にした上, 認証機能を追加してあります. Stripe実装は完遂できませんでした.</p>   
+      <p>俳句/短歌のAIサイトの改訂版です. Next.js / TypeScript仕様にした上, 認証機能を追加してあります. Stripeによるマネタイズに関しては, KL渡航時期などと重なり, うまく実装できませんでした.</p>   
       <div className="space-y-2">
-        <h3 className="font-bold">コメント</h3>     
+        <h3 className="font-bold">コメント</h3>   
+        <p>諸事情により, 認証機能なしのバージョンをデプロイしてあります.</p>
         <p>詳細はGitHubの"haiku-tanka2"を参照.</p>
       </div>
       <a 
