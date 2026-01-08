@@ -21,14 +21,9 @@ export default function LearningHistory() {
       status: "completed"
     },
     {
-      period: "8-9ヶ月目",
-      topics: ["KL渡航","休止期間2ヶ月"],
+      period: "8-11ヶ月目",
+      topics: ["KL渡航","休止期間4ヶ月"],
       status: "paused"
-    },
-    {
-      period: "10-11ヶ月目",
-      topics: ["Stripe"],
-      status: "completed"
     },
     {
       period: "12-14ヶ月目",
