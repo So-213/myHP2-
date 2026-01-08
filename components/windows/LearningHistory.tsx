@@ -34,6 +34,16 @@ export default function LearningHistory() {
       period: "12-14ヶ月目",
       topics: ["Projects③", "Docker基礎"],
       status: "completed"
+    },
+    {
+      period: "15ヶ月目",
+      topics: [""],
+      status: "completed"
+    },
+    {
+      period: "16ヶ月目",
+      topics: ["S3", "Trraform基礎"],
+      status: "completed"
     }
   ];
 
