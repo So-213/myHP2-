@@ -32,12 +32,12 @@ export default function LearningHistory() {
     },
     {
       period: "15ヶ月目",
-      topics: [""],
-      status: "completed"
+      topics: [],
+      status: "paused"
     },
     {
       period: "16ヶ月目",
-      topics: ["S3", "Trraform基礎"],
+      topics: ["Projects③", "S3 / Trraform基礎"],
       status: "completed"
     }
   ];
