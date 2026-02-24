@@ -39,7 +39,17 @@ export default function LearningHistory() {
       period: "16ヶ月目",
       topics: ["Projects③", "S3 / Trraform基礎"],
       status: "completed"
-    }
+    },
+    {
+      period: "17ヶ月目",
+      topics: ["復讐"],
+      status: "completed"
+    },
+    // {
+    //   period: "16ヶ月目",
+    //   topics: ["Projects③", "S3 / Trraform基礎"],
+    //   status: "completed"
+    // }
   ];
 
   return (
