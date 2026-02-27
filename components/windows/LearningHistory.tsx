@@ -41,8 +41,8 @@ export default function LearningHistory() {
       status: "completed"
     },
     {
-      period: "17ヶ月目",
-      topics: ["復讐"],
+      period: "17-18ヶ月目",
+      topics: ["復習"],
       status: "completed"
     },
     // {
